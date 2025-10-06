@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">My Business</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="order.html" class="active">Order Now</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- ORDER FORM -->
+    <div class="container">
+        <div class="card">
+            <h1>Place Your Order</h1>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="food">Choose Your Food:</label>
+                <input type="text" id="food" name="food" placeholder="e.g. Burger, Fries" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <button type="submit">Submit Order</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
